@@ -1,0 +1,13 @@
+{
+  "name": "rest-api-using-web-app",
+  "version": "0.0.0",
+  "description": "RestApiUsingWebApp",
+  "main": "server.js",
+  "author": {
+    "name": "ravindra"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
