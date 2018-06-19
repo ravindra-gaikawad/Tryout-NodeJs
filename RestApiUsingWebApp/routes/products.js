@@ -1,3 +1,6 @@
+var express = require('express');
+var router = express.Router();
+
 var product =
     [
         {
@@ -13,18 +16,18 @@ var product =
             "productStock": "false"
         }
     ];
-exports.getProducts = function (req, res) {
 
+router.get('/', function (req, res) {
     res.send(product);
-};
+});
 
-exports.addProduct = function (req, res) {
+router.post('/', function (req, res) {
     var data = req.body;
     product.push(data);
     res.send(product);
-};
+});
 
-exports.deleteProduct = function (req, res) {
+router.delete = ('/', function (req, res) {
 
     var id = parseInt(req.params.id) - 1;
     var itemdeleted = product.splice(id, 1);
@@ -34,9 +37,9 @@ exports.deleteProduct = function (req, res) {
     else {
         res.send(product);
     }
-};
+});
 
-exports.updateProduct = function (req, res) {
+router.put = ('/', function (req, res) {
     var id = parseInt(req.params.id) - 1;
     var productToUpdate = product[id];
     var data = req.body;
@@ -52,4 +55,7 @@ exports.updateProduct = function (req, res) {
 
         res.send(product);
     }
-};
+});
+
+//export this router to use in our index.js
+module.exports = router;
