@@ -27,7 +27,7 @@ router.post('/', function (req, res) {
     res.send(product);
 });
 
-router.delete = ('/', function (req, res) {
+router.delete = ('/:id', function (req, res) {
 
     var id = parseInt(req.params.id) - 1;
     var itemdeleted = product.splice(id, 1);
@@ -39,7 +39,7 @@ router.delete = ('/', function (req, res) {
     }
 });
 
-router.put = ('/', function (req, res) {
+router.put = ('/:id', function (req, res) {
     var id = parseInt(req.params.id) - 1;
     var productToUpdate = product[id];
     var data = req.body;
