@@ -7,6 +7,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AzureRestApi", "AzureRestAp
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "W3Schools", "W3Schools\W3Schools.njsproj", "{893DE239-CDF8-4498-BC50-0E48C23F5B55}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TutorialsPoint", "TutorialsPoint\TutorialsPoint.njsproj", "{AA905006-E401-40FE-8899-D775FA672F6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{893DE239-CDF8-4498-BC50-0E48C23F5B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{893DE239-CDF8-4498-BC50-0E48C23F5B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{893DE239-CDF8-4498-BC50-0E48C23F5B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA905006-E401-40FE-8899-D775FA672F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA905006-E401-40FE-8899-D775FA672F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA905006-E401-40FE-8899-D775FA672F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA905006-E401-40FE-8899-D775FA672F6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
