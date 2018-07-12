@@ -22,7 +22,7 @@ router.get('/:id', function (req, res) {
 router.post('/', function (req, res) {
 
     req.sql("exec createquote @quote")
-        .param('quote', req.body, TYPES.NVarChar)
+        .param('quote', JSON.stringify(req.body), TYPES.NVarChar)
         .exec(res);
 
 });
@@ -32,7 +32,7 @@ router.put('/:id', function (req, res) {
 
     req.sql("exec updatequote @id, @quote")
         .param('id', req.params.id, TYPES.Int)
-        .param('quote', req.body, TYPES.NVarChar)
+        .param('quote', JSON.stringify(req.body), TYPES.NVarChar)
         .exec(res);
 
 });
