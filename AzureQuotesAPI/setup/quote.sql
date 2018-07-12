@@ -10,7 +10,8 @@ GO
 CREATE TABLE Quote (
 	Id int IDENTITY PRIMARY KEY,
 	Title nvarchar(4000) NOT NULL,
-	Author nvarchar(50)	
+	Author nvarchar(50),
+	Category nvarchar(50)	
 )
 GO
 
@@ -115,7 +116,7 @@ VALUES
 ('It’s not the years in your life that count. It’s the life in your years.', 'Abraham Lincoln'),
 ('Change your thoughts and you change your world.', 'Norman Vincent Peale'),
 ('Either write something worth reading or do something worth writing.', 'Benjamin Franklin'),
-('Nothing is impossible, the word itself says, “I’m possible!”', '–Audrey Hepburn'),
+('Nothing is impossible, the word itself says, “I’m possible!”', 'Audrey Hepburn'),
 ('The only way to do great work is to love what you do.', 'Steve Jobs'),
 ('If you can dream it, you can achieve it.', 'Zig Ziglar')
 
@@ -126,18 +127,24 @@ as begin
 	insert into Quote
 	select *
 	from OPENJSON(@Quote) 
-			WITH (	Title nvarchar(4000), Author nvarchar(50))
+			WITH (	Title nvarchar(4000), Author nvarchar(50), Category nvarchar(50))
 end
 GO
 
 create procedure updateQuote(@id int, @Quote nvarchar(max))
 as begin
 	update Quote
-	set Title = json.Title, Author = json.Author
+	set Title = json.Title, Author = json.Author,Category = json.Category
 	from OPENJSON( @Quote )
-			WITH(   Title nvarchar(4000), Author nvarchar(50)) AS json
+			WITH(   Title nvarchar(4000), Author nvarchar(50), Category nvarchar(50)) AS json
 	where id = @id
 end
 go
+
+Update Quote
+Set Title = LTRIM(RTRIM(Title));
+
+Update Quote
+Set Author = LTRIM(RTRIM(Author));
 
 select * from Quote for json path

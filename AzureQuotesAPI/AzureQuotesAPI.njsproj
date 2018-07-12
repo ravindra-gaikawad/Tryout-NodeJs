@@ -29,10 +29,12 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="routes\category.js" />
     <Compile Include="routes\quote.js" />
     <Compile Include="server.js" />
     <Content Include="config\default.json" />
-    <Content Include="setup\setup.sql" />
+    <Content Include="setup\category.sql" />
+    <Content Include="setup\quote.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
     <Content Include="package.json" />

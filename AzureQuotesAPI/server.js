@@ -24,6 +24,8 @@ app.use(function (req, res, next) {
 });
 
 app.use('/quote', require('./routes/quote'));
+app.use('/category', require('./routes/category'));
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
