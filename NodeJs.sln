@@ -11,6 +11,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TutorialsPoint", "Tutorials
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "DbAccess", "DbAccess\DbAccess.njsproj", "{84B498AF-A38E-4A19-88FB-296B3617C398}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AzureQuotesAPI", "AzureQuotesAPI\AzureQuotesAPI.njsproj", "{92683EB1-F289-45F7-B294-CA7E6D011588}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{84B498AF-A38E-4A19-88FB-296B3617C398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84B498AF-A38E-4A19-88FB-296B3617C398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84B498AF-A38E-4A19-88FB-296B3617C398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92683EB1-F289-45F7-B294-CA7E6D011588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92683EB1-F289-45F7-B294-CA7E6D011588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92683EB1-F289-45F7-B294-CA7E6D011588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92683EB1-F289-45F7-B294-CA7E6D011588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

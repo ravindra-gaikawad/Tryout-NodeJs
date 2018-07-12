@@ -1,0 +1,14 @@
+{
+  "name": "azure-quotes-api",
+  "version": "0.0.0",
+  "description": "AzureQuotesAPI",
+  "scripts": {
+    "start": "node server"
+  },
+  "engines": {
+    "node": "~6.10.x"
+  },
+  "author": {
+    "name": "ravindra"
+  }
+}

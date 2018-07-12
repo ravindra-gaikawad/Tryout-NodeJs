@@ -2,17 +2,17 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>DbAccess</Name>
-    <RootNamespace>DbAccess</RootNamespace>
+    <Name>AzureQuotesAPI</Name>
+    <RootNamespace>AzureQuotesAPI</RootNamespace>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>84b498af-a38e-4a19-88fb-296b3617c398</ProjectGuid>
+    <ProjectGuid>92683eb1-f289-45f7-b294-ca7e6d011588</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Todo-RestApi-3.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,22 +29,11 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RestApi-1.js" />
-    <Compile Include="RestApi-2.js" />
-    <Compile Include="routes\todo.js" />
     <Compile Include="server.js" />
-    <Compile Include="Todo-RestApi-3.js" />
-    <Content Include="config\default.json" />
-    <Content Include="data\tweets.json" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="setup\setup.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="data\" />
-    <Folder Include="config\" />
-    <Folder Include="setup\" />
-    <Folder Include="routes\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
