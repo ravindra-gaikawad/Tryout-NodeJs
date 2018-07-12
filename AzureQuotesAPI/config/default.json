@@ -1,0 +1,11 @@
+{
+  "connection": {
+    "server": "localhost",
+    "userName": "sa",
+    "password": "pass@123",
+    "options": {
+      "encrypt": false,
+      "database": "QuoteDB"
+    }
+  }
+}
