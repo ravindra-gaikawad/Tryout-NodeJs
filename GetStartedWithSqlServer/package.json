@@ -1,0 +1,13 @@
+{
+  "name": "get-started-with-sql-server",
+  "version": "0.0.0",
+  "description": "GetStartedWithSqlServer",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "tedious": "^3.0.1"
+  }
+}

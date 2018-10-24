@@ -1,0 +1,11 @@
+{
+  "connection": {
+    "server": "RAVINDRAG-PC",
+    "userName": "sa",
+    "password": "pass@123",
+    "options": {
+      "encrypt": false,
+      "database": "NodeJs"
+    }
+  }
+}
